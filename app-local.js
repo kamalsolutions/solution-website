@@ -1,9 +1,7 @@
 'use strict';
 const express = require('express');
-const serverless = require('serverless-http');
 const path = require('path');
 const app = express();
-const bodyParser = require('body-parser');
 
 app.use('/static/',express.static(path.join(__dirname, 'public')));
 app.set('view engine','pug');
@@ -13,11 +11,9 @@ app.set('views',__dirname + '/public/templates');
 // routes
 app.get('/',require('./routes/index'));
 app.get('/about',require('./routes/about'));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, ()=> console.log(`Server Started on ${PORT}`));
 
-app.use(bodyParser.json());
-app.use('/.netlify/functions/server', router);  // path must route to lambda
 
-module.exports = app;
-module.exports.handler = serverless(app);
 
 
