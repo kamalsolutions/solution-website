@@ -1,19 +1,5 @@
 extends layout.pug
 block content
-  nav.flex.items-center.justify-between-wrap.bg-indigo-500.p-6
-    section.logo.flex.flex-shrink-0.mr-6.items-center
-    section(class!="block lg:hidden")
-      button(class!="flex items-center px-3 py-2 border rounded text-teal-200 border-till-400 hover:text-white hover:border-white")
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-
-    section(class!="w-full block flex-grow lg:flex lg:items-center lg:w-auto")
-      section(class!="text-sm lg:flex-grow")
-        a(class!="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4") Home
-        //- a(class!="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4") Team
-        a(class!="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4") Products
-        a(class!="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4") What We Do
-        a(class!="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4") Get In Touch
-
   section.w-full.mx-auto.bg-gray-600.mt-0.p-4.font-sans
     p(class!="mt-6 text-2xl sm:text-4xl text-white lg:text-3xl item-center  text-center ") We Grow With You
     p(class!="text-1xl lg:text-2xl text-white text-center") we build software to support your business
@@ -41,13 +27,14 @@ block content
 
 
     section(class!="lg:text-3xl").text-center.uppercase.font-semibold.text-gray-700 Products
+    section(class!="lg:text-1xl").mb-4.text-center we're working on .
     section
       section.flex.flex-wrap.p-1
         section(class!="px-6 py-6 max-w-md border flex flex-col sm:w-1/2 md:w-2/6 mb-3")
           section.font-bold.text-xl-mb-2.text-gray-600.text-2xl Edwuma Jobs
           p Edwuma Jobs is a start-up in Human Resources for the Ghanaian community. We are spirited to make the job search and recruitment process as painless as possible in Ghana.
           section(class!="mt-4 sm:mt-6")
-            a(class!="inline-block bg-indigo-500 px-5 py-3 shadow-lg uppercase tracking-wider font-semibold sm:text-base text-sm hover:bg-indigo-400 rounded-lg text-white") Visit App
+            a(class!="inline-block bg-indigo-500 px-5 py-3 shadow-lg uppercase tracking-wider font-semibold sm:text-base text-sm hover:bg-indigo-400 rounded-lg text-white" href="https://edwuma.work" target="_blank") Visit App
 
         section(class!="px-6 py-6 max-w-md border flex flex-col sm:w-1/2 md:w-2/6 mb-3")
           section.font-bold.text-xl-mb-2.text-gray-600.text-2xl Edwuma Accounting

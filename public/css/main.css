@@ -54313,3 +54313,6 @@ video {
 /**
  * My style
  */
+#menu-toggle:checked + #menu{
+  display: block;
+}

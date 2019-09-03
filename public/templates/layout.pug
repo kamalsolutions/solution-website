@@ -7,6 +7,26 @@ html(lang="eng")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Kamal Group
     link(rel='stylesheet', href='/static/css/main.css',type='text/css')
-body.bg-white-600
+body.bg-gray-200
+  header(class!="lg:px-16 px-6 bg-indigo-500 flex flex-wrap items-center lg:py-0 py-2")
+    section.flex-1.flex.justify-between.items-center
+      a Logo
+    label(for="menu-toggle" class!="cursor-pointer lg:hidden block")
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+
+    input(type="checkbox" class="hidden" id="menu-toggle")
+    section(class!="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu")
+      nav
+        ul(class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 text-white")
+          li
+            a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400" href="/") Home
+          li
+            a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400" href="about") Company
+          li
+            a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") Products
+          li
+            a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") What We Do
+          li
+            a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") Get In Touch
   block content
 
