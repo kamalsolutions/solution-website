@@ -5,14 +5,15 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 
-app.use('/static/',express.static(path.join(__dirname, 'public')));
+const router = express.Router();
+app.use('/static/',express.static(path.join(__dirname, '../public')));
 app.set('view engine','pug');
-app.set('views',__dirname + '/public/templates');
+app.set('views',__dirname + '../../public/templates');
 // set static folder
 
 // routes
-app.get('/',require('./routes/index'));
-app.get('/about',require('./routes/about'));
+app.get('/',require('../routes/index'));
+app.get('/about',require('../routes/about'));
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
