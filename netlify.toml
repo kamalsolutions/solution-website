@@ -1,3 +1,2 @@
 [build]
-  command = "npm install && npm run build"
-  functions = "functions"
+  command = "npm install && npm install pug-cli && node_modules/pug-cli/index.js pug/ --out ./public/templates && npm run build"
