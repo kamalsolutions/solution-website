@@ -1,5 +1,12 @@
 extends layout.pug
 block content
-  section.flex.flex-wrap
-    section(class!="flex-col flex")
-      section(class!="uppercase")
+  section(class!="w-full bg-gray-600 mx-auto text-white flex").flex.flex-wrap
+    h1(class!="text-4xl").font-bold.font-400.mb-4.text-center.w-full A company like a family
+    section(class!="container flex flex-wrap p-4")
+      section(class!="flex md:w-2/3 w-full lg:w-2/3")
+        section.flex.flex-col
+          section(class!="uppercase text-center font-serif font-semibold text-2xl") The people behind the products and works
+          p(class!="font-sans text-lg").p-4 The team takes immense pride not only in the creative work we produce but also service. We love simple and great design and thrive on enthusiasm of the businesses we work with on projects.
+      section(class!="flex  md:w-1/2 w-full lg:w-1/3")
+        section.flex.flex-col
+          section picture
