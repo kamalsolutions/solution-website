@@ -14,6 +14,8 @@ app.set('views',__dirname + '../../public/templates');
 // routes
 app.get('/',require('../routes/index'));
 app.get('/about',require('../routes/about'));
+app.get('/contact',require('../routes/contact'));
+app.get('/portfolio',require('../routes/portfolio'));
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda

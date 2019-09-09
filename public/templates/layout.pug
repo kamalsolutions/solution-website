@@ -7,33 +7,32 @@ html(lang="eng")
     meta(name="description" content="Kamal Group")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Solutions | Kamal Group
-    link(href="/static/css/main.css" rel="stylesheet")
-    //- link(href="https://res.cloudinary.com/karsoft92/raw/upload/v1567667548/main.css" rel="stylesheet")
+    //- link(href="/static/css/main.css" rel="stylesheet")
+    link(href="https://res.cloudinary.com/karsoft92/raw/upload/v1567667548/main.css" rel="stylesheet")
 
 
     script(src="https://kit.fontawesome.com/f2cff420a4.js")
 body.bg-gray-200
   section.wrapper
-    header(class!="lg:px-16 px-6 bg-indigo-500 flex flex-wrap items-center lg:py-0 py-2")
+    header(class!="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2")
       section.flex-1.flex.justify-between.items-center
-        a Logo
+        a
+          img(src="https://res.cloudinary.com/karsoft92/image/upload/v1568059824/ks_logo.png" width="75px" height="75px")
       label(for="menu-toggle" class!="cursor-pointer lg:hidden block")
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        img(src="https://res.cloudinary.com/karsoft92/image/upload/v1568060903/icons8-menu-64.png")
 
       input(type="checkbox" class="hidden" id="menu-toggle")
       section(class!="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu")
         nav
-          ul(class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 text-white")
+          ul(class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 text-black")
             li
-              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400" href="/") Home
+              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-black hover:font-semibold border-transparent hover:border-gray-400" href="/") Home
             li
-              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400" href="about") Company
+              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-black hover:font-semibold border-transparent hover:border-gray-400" href="about") Our Company
             li
-              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") Work
-            //- li
-            //-   a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") What We Do
-            //- li
-              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-white border-transparent hover:border-gray-400") Contact
+              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-black hover:font-semibold border-transparent hover:border-gray-400" href="portfolio") Our Work
+            li
+              a(class!="lg:p-4 py-3 px-0 block border-b-2 text-black hover:font-semibold border-transparent hover:border-gray-400" href="contact") Contact
     block content
 
   footer.bg-gray-700.p-4
@@ -43,11 +42,11 @@ body.bg-gray-200
               li(class!="font-bold").mr-4.text-white
                 a(href="/") Home
               li(class!="font-bold").mr-4.text-white
-                a(href="/about") Our Company
+                a(href="about") Our Company
               li(class!="font-bold").mr-4.text-white
-                a(href="") Our Work
+                a(href="portfolio") Our Work
               li(class!="font-bold").mr-4.text-white
-                a(href="") Contact
+                a(href="contact") Contact
 
 
 

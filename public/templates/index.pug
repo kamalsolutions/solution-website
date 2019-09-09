@@ -1,10 +1,10 @@
 extends layout.pug
 block content
-  section.w-full.mx-auto.bg-gray-600.mt-0.p-4.font-sans
+  section(class!="jumbotron-colored").w-full.mx-auto.bg-gray-600.mt-0.p-4.font-sans
     p(class!="mt-6 text-2xl sm:text-4xl text-white lg:text-3xl item-center  text-center ") We Grow With You
     p(class!="text-1xl lg:text-2xl text-white text-center") we build software to support your business
     p.text-center
-      a(class!="inline-block mt-4 bg-indigo-500 px-5 py-3 shadow-lg uppercase tracking-wider font-semibold sm:text-base text-sm bg-indigo-500 hover:bg-indigo-400 rounded-lg text-white text-center") Grow With Us
+      a(class!="inline-block mt-4 bg-indigo-500 px-5 py-3 shadow-lg uppercase tracking-wider font-semibold sm:text-base text-sm bg-indigo-500 hover:bg-indigo-400 rounded-lg text-white text-center" href="contact") Grow With Us
 
   section.container.mx-auto.mt-4.mb-3.p-1
     section.text-center.mt-4
@@ -61,7 +61,7 @@ block content
         section(class!="px-2 flex w-full max-md-full md:w-1/2 lg:w-1/3 mb-3")
           section.border.border-gray-400.flex.flex-col.px-3.py-2
             section.font-bold.mb-2.text-gray-600.text-2xl.text-center Edwuma CRM
-            p Edwuma CRM seeks to help with Customer relationship improving business relationships with customers, specifically focusing on customer retention and ultimately driving sales growth
+            p Edwuma CRM seeks to help with Customer relationship improving business relationships with customers, specifically focusing on customer retention and ultimately driving sales growth.
             section(class!="mt-4 sm:mt-6")
               a(class!="inline-block bg-gray-500 px-5 py-3 shadow-lg uppercase tracking-wider font-semibold sm:text-base text-sm hover:bg-indigo-400 rounded-lg text-white") Coming Soon
 
