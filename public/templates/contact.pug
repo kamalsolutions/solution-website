@@ -1,8 +1,39 @@
 extends layout.pug
 block content
-  section(class!="w-full bg-gray-600 mx-auto text-white flex flex-wrap jumbotron-colored")
+  section(class!="w-full bg-gray-600 mx-auto text-white flex flex-wrap jumbotron-colored mb-4")
     h1(class!="text-4xl mt-4").font-bold.font-400.mb-4.text-center.w-full Contact
     section(class!="text-center mb-3 w-full text-lg") Got an Idea? Leave us a note.
+
+  form(class!="w-full mx-auto  max-w-md justify-center items-center" action="https://formspree.io/karsoft92@gmail.com" method="POST")
+    section(class!="flex flex-wrap -mx-3 mb-6 ")
+      section(class!="w-full md:w-1/2 px-3 mb-6 md:mb-0")
+        label(for="" class!="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2") First Name
+        input(type="text" name="firstname" placeholder="First Name" class!="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white")
+
+      section(class!="w-full md:w-1/2 px-3 mb-6 md:mb-0")
+        label(for="" class!="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2") Last Name
+        input(type="text" name="lastname" placeholder="Last Name" class!="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white")
+
+    section(class!="flex flex-wrap -mx-3 mb-6")
+      section(class!="w-full md:w-full px-3 mb-6 md:mb-0")
+        label(for="" class!="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2") Email
+        input(type="text" name="email" placeholder="Email" class!="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white")
+
+    section(class!="flex flex-wrap -mx-3 mb-6")
+      section(class!="w-full md:w-full px-3 mb-6 md:mb-0")
+        label(for="" class!="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2") Email
+        input(type="text" name="email" placeholder="Email" class!="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white")
+
+    section(class!="flex flex-wrap -mx-3 mb-6")
+      section(class!="w-full md:w-full px-3 mb-6 md:mb-0")
+        label(for="" class!="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2") Message
+        textarea(name="message" placeholder="Your Message" class!="appearance-none block w-full bg-gray-200 text-gray-700 border border-indigo-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white")
+
+    section(class!="flex flex-wrap -mx-3 mb-6")
+      section(class!="w-full md:w-full px-3 mb-6 md:mb-0")
+        button(class!="bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-4 border-b-4 border-indigo-700 hover:border-indigo-500 rounded") Submit
+
+
 
 
 
